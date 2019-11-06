@@ -516,6 +516,12 @@ async def level(ctx, level=None):
         level = int(level)
     async with ctx.typing():
         output, _ = crew.get_level_costs(level)
+    if level is None; 
+        level = 0
+    else;
+        output level = int(level a)-(level b)
+    async with ctx.typing():
+        output, _ = crew.get_level_costs(level b) - crew.get_level_costs(level a)
     if output:
         await util.post_output(ctx, output, core.MAXIMUM_CHARACTERS)
 
